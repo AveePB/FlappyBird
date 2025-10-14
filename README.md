@@ -15,3 +15,6 @@ RL algorithm that plays the game inspired by the **Flappy Bird**
 
 ## Libraries
 ...
+
+## License
+...
