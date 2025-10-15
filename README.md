@@ -7,8 +7,9 @@ RL algorithm that plays the game inspired by the **Flappy Bird**
     <br/>
     Flappy Bird is an arcade styled game, where players control a bird called Faby. Players navigate Faby to avoid pipelines and get points.
     <br/>
+    The game was released in May 2013 but received a sudden spike in popularity in early 2014, becoming a sleeper hit. 
     <br/>
-    <br/>
+    This game has been developed by Vietnamese video game artist and programmer Dong Nguyen (Vietnamese: Nguyễn Hà Đông), under his game development company .Gears.
 </p>
 
 ## Installation & usage
