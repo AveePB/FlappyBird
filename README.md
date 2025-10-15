@@ -13,10 +13,10 @@ RL algorithm that plays the game inspired by the **Flappy Bird**
     This game has been developed by Vietnamese video game artist and programmer Dong Nguyen (Vietnamese: Nguyễn Hà Đông), under his game development company .Gears.
 </p>
 
-## Installation & usage
+## Reinforcement learning
 ...
 
-## Reinforcement learning
+## Installation & usage
 ...
 
 ## Libraries
