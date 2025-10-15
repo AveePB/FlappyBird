@@ -3,7 +3,7 @@ RL algorithm that plays the game inspired by the **Flappy Bird**
 
 ## Flappy Bird
 
-**Flappy Bird** is an arcade styled game, where players control a bird called *Faby*. Players navigate Faby to avoid pipelines and get more points.
+**Flappy Bird** is an arcade styled game, where players control a bird called *Faby*. Players navigate Faby to avoid pipelines and get points.
 
 <img src="./assets/flappy-bird.jpeg" width="250">
 
