@@ -3,9 +3,8 @@ RL algorithm that plays the game inspired by the **Flappy Bird**
 
 ## Flappy Bird
 <p align="left">
-**Flappy Bird** is an arcade styled game, where players control a bird called *Faby*. Players navigate Faby to avoid pipelines and get points.
-
-  <img src="./assets/flappy-bird.jpeg" width="250" align="right">
+    <img src="./assets/flappy-bird.jpeg" width="250" align="right">
+    **Flappy Bird** is an arcade styled game, where players control a bird called *Faby*. Players navigate Faby to avoid pipelines and get points.
 </p>
 
 ## Installation & usage
