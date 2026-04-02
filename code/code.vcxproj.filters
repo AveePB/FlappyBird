@@ -13,10 +13,146 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Resource Files\assets">
+      <UniqueIdentifier>{72777778-6a39-48ad-88a7-530dee696e31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\assets\bird">
+      <UniqueIdentifier>{69f786c6-d524-40f8-93f4-8ebbd6bbdbf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\assets\env">
+      <UniqueIdentifier>{2cc90365-d677-4c7d-9b45-ed6d8114194b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\assets\gui">
+      <UniqueIdentifier>{4cc529a9-620f-4d6d-8c53-2ab8d3c58245}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\assets\numbers">
+      <UniqueIdentifier>{ac3dbd99-be22-41c8-8e00-d5c6f1fef5af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\assets\sentences">
+      <UniqueIdentifier>{b3194365-70e0-41da-a03a-93b588b81fa2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\bird\bird-down.png">
+      <Filter>Resource Files\assets\bird</Filter>
+    </Image>
+    <Image Include="assets\bird\bird-neutral.png">
+      <Filter>Resource Files\assets\bird</Filter>
+    </Image>
+    <Image Include="assets\bird\bird-up.png">
+      <Filter>Resource Files\assets\bird</Filter>
+    </Image>
+    <Image Include="assets\env\background.png">
+      <Filter>Resource Files\assets\env</Filter>
+    </Image>
+    <Image Include="assets\env\bottom-pipeline.png">
+      <Filter>Resource Files\assets\env</Filter>
+    </Image>
+    <Image Include="assets\env\grass.png">
+      <Filter>Resource Files\assets\env</Filter>
+    </Image>
+    <Image Include="assets\env\top-pipeline.png">
+      <Filter>Resource Files\assets\env</Filter>
+    </Image>
+    <Image Include="assets\gui\golden-coin.png">
+      <Filter>Resource Files\assets\gui</Filter>
+    </Image>
+    <Image Include="assets\gui\play-btn.png">
+      <Filter>Resource Files\assets\gui</Filter>
+    </Image>
+    <Image Include="assets\gui\ranking-btn.png">
+      <Filter>Resource Files\assets\gui</Filter>
+    </Image>
+    <Image Include="assets\gui\result-board.png">
+      <Filter>Resource Files\assets\gui</Filter>
+    </Image>
+    <Image Include="assets\gui\silver-coin.png">
+      <Filter>Resource Files\assets\gui</Filter>
+    </Image>
+    <Image Include="assets\sentences\flappy-bird.png">
+      <Filter>Resource Files\assets\sentences</Filter>
+    </Image>
+    <Image Include="assets\sentences\game-over.png">
+      <Filter>Resource Files\assets\sentences</Filter>
+    </Image>
+    <Image Include="assets\sentences\get-ready.png">
+      <Filter>Resource Files\assets\sentences</Filter>
+    </Image>
+    <Image Include="assets\numbers\eight.png">
+      <Filter>Resource Files\assets\numbers</Filter>
+    </Image>
+    <Image Include="assets\numbers\five.png">
+      <Filter>Resource Files\assets\numbers</Filter>
+    </Image>
+    <Image Include="assets\numbers\four.png">
+      <Filter>Resource Files\assets\numbers</Filter>
+    </Image>
+    <Image Include="assets\numbers\micro-eight.png">
+      <Filter>Resource Files\assets\numbers</Filter>
+    </Image>
+    <Image Include="assets\numbers\micro-five.png">
+      <Filter>Resource Files\assets\numbers</Filter>
+    </Image>
+    <Image Include="assets\numbers\micro-four.png">
+      <Filter>Resource Files\assets\numbers</Filter>
+    </Image>
+    <Image Include="assets\numbers\micro-nine.png">
+      <Filter>Resource Files\assets\numbers</Filter>
+    </Image>
+    <Image Include="assets\numbers\micro-one.png">
+      <Filter>Resource Files\assets\numbers</Filter>
+    </Image>
+    <Image Include="assets\numbers\micro-seven.png">
+      <Filter>Resource Files\assets\numbers</Filter>
+    </Image>
+    <Image Include="assets\numbers\micro-six.png">
+      <Filter>Resource Files\assets\numbers</Filter>
+    </Image>
+    <Image Include="assets\numbers\micro-three.png">
+      <Filter>Resource Files\assets\numbers</Filter>
+    </Image>
+    <Image Include="assets\numbers\micro-two.png">
+      <Filter>Resource Files\assets\numbers</Filter>
+    </Image>
+    <Image Include="assets\numbers\micro-zero.png">
+      <Filter>Resource Files\assets\numbers</Filter>
+    </Image>
+    <Image Include="assets\numbers\nine.png">
+      <Filter>Resource Files\assets\numbers</Filter>
+    </Image>
+    <Image Include="assets\numbers\one.png">
+      <Filter>Resource Files\assets\numbers</Filter>
+    </Image>
+    <Image Include="assets\numbers\seven.png">
+      <Filter>Resource Files\assets\numbers</Filter>
+    </Image>
+    <Image Include="assets\numbers\six.png">
+      <Filter>Resource Files\assets\numbers</Filter>
+    </Image>
+    <Image Include="assets\numbers\three.png">
+      <Filter>Resource Files\assets\numbers</Filter>
+    </Image>
+    <Image Include="assets\numbers\two.png">
+      <Filter>Resource Files\assets\numbers</Filter>
+    </Image>
+    <Image Include="assets\numbers\zero.png">
+      <Filter>Resource Files\assets\numbers</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="game.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sprites.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

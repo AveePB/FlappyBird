@@ -127,7 +127,49 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="game.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\bird\bird-down.png" />
+    <Image Include="assets\bird\bird-neutral.png" />
+    <Image Include="assets\bird\bird-up.png" />
+    <Image Include="assets\env\background.png" />
+    <Image Include="assets\env\bottom-pipeline.png" />
+    <Image Include="assets\env\grass.png" />
+    <Image Include="assets\env\top-pipeline.png" />
+    <Image Include="assets\gui\golden-coin.png" />
+    <Image Include="assets\gui\play-btn.png" />
+    <Image Include="assets\gui\ranking-btn.png" />
+    <Image Include="assets\gui\result-board.png" />
+    <Image Include="assets\gui\silver-coin.png" />
+    <Image Include="assets\numbers\eight.png" />
+    <Image Include="assets\numbers\five.png" />
+    <Image Include="assets\numbers\four.png" />
+    <Image Include="assets\numbers\micro-eight.png" />
+    <Image Include="assets\numbers\micro-five.png" />
+    <Image Include="assets\numbers\micro-four.png" />
+    <Image Include="assets\numbers\micro-nine.png" />
+    <Image Include="assets\numbers\micro-one.png" />
+    <Image Include="assets\numbers\micro-seven.png" />
+    <Image Include="assets\numbers\micro-six.png" />
+    <Image Include="assets\numbers\micro-three.png" />
+    <Image Include="assets\numbers\micro-two.png" />
+    <Image Include="assets\numbers\micro-zero.png" />
+    <Image Include="assets\numbers\nine.png" />
+    <Image Include="assets\numbers\one.png" />
+    <Image Include="assets\numbers\seven.png" />
+    <Image Include="assets\numbers\six.png" />
+    <Image Include="assets\numbers\three.png" />
+    <Image Include="assets\numbers\two.png" />
+    <Image Include="assets\numbers\zero.png" />
+    <Image Include="assets\sentences\flappy-bird.png" />
+    <Image Include="assets\sentences\game-over.png" />
+    <Image Include="assets\sentences\get-ready.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="game.hpp" />
+    <ClInclude Include="sprites.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
