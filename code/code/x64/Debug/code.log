@@ -1,2 +1,7 @@
-﻿  game.cpp
+﻿  sprites.cpp
+C:\Users\mike3\Desktop\FlappyBird\code\sprites.cpp(34,33): warning C4244: '=': conversion from 'T' to 'float', possible loss of data
+C:\Users\mike3\Desktop\FlappyBird\code\sprites.cpp(34,33): warning C4244:         with
+C:\Users\mike3\Desktop\FlappyBird\code\sprites.cpp(34,33): warning C4244:         [
+C:\Users\mike3\Desktop\FlappyBird\code\sprites.cpp(34,33): warning C4244:             T=unsigned int
+C:\Users\mike3\Desktop\FlappyBird\code\sprites.cpp(34,33): warning C4244:         ]
   code.vcxproj -> C:\Users\mike3\Desktop\FlappyBird\code\x64\Debug\code.exe
