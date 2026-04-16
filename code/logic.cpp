@@ -1,4 +1,5 @@
 #include <iostream>
+#include <chrono>
 #include "logic.hpp"
 #include "consts.hpp"
 
@@ -64,35 +65,12 @@ bool mz::Game::init() {
     this->window = std::make_unique<sf::RenderWindow>(sf::VideoMode({ mz::WINDOW_WIDTH, mz::WINDOW_HEIGHT }), mz::WINDOW_TITLE, sf::Style::Titlebar | sf::Style::Close);
     this->window->setFramerateLimit(mz::FPS);
 
+    this->clock = std::make_unique<sf::Clock>();
+
     sf::Image icon;
     if (icon.loadFromFile(mz::PLAYER_TEX_PATH)) this->window->setIcon(icon);
 
     return true;
-}
-
-void mz::Game::handleEvents() {
-    bool is_jump = false;
-
-    while (const std::optional event = this->window->pollEvent()) {
-        if (event->is<sf::Event::Closed>()) // Close button pressed
-            this->window->close();
-
-        else if (const auto* keyPressed = event->getIf<sf::Event::KeyPressed>()) // Some key pressed
-            switch (keyPressed->scancode) {
-
-            case sf::Keyboard::Scancode::Escape: // Close window
-                this->window->close();
-                break;
-
-            case sf::Keyboard::Scancode::Space: // Jump
-                this->player->applyRiseEffect();
-                is_jump = true;
-                break;
-            }
-    }
-
-    this->grass->move();
-    if (!is_jump) this->player->applyFallEffect();
 }
 
 void mz::Game::drawAndDisplay() {
@@ -109,11 +87,61 @@ mz::Game* mz::Game::getInstance() {
 
 bool mz::Game::run() {
     if (!this->init()) return false;
+    this->player->setState(mz::Bird::FALLING);
+    bool wasSpaceReleased = true;
 
     while (this->window->isOpen()) {
-        this->handleEvents();
+        // Get time
+        sf::Time dt = this->clock->restart();
+        float deltaTime = dt.asMilliseconds();
+
+        // Handle events
+        while (const std::optional event = this->window->pollEvent()) {
+
+            // X button pressed
+            if (event->is<sf::Event::Closed>())
+                this->window->close();
+
+            // Some key event happened
+            else if (const auto* keyPressed = event->getIf<sf::Event::KeyPressed>())
+                switch (keyPressed->scancode) {
+                
+                    case sf::Keyboard::Scancode::Escape:
+                        this->window->close();
+                        break;
+
+                    case sf::Keyboard::Scancode::Space:
+                        if (wasSpaceReleased) {
+                            this->player->setState(mz::Bird::State::RISING);
+                            this->player->setBoost(mz::BOOST_PX);
+                            wasSpaceReleased = false;
+                        }
+                        break;
+                }
+            else if (const auto* keyPressed = event->getIf<sf::Event::KeyReleased>())
+                if (keyPressed->scancode == sf::Keyboard::Scancode::Space) wasSpaceReleased = true;
+        }
+
+        // Update logic
+        this->grass->move(deltaTime);
+
+        // Update bird logic
+        switch (this->player->getState()) {
+
+            case mz::Bird::State::FALLING:
+                this->player->applyFallEffect(deltaTime);
+                break;
+            
+            case mz::Bird::State::RISING:
+                if (this->player->applyRiseEffect(deltaTime)) 
+                    this->player->setState(mz::Bird::State::FALLING);
+                break;
+
+            case mz::Bird::State::RESTING:
+                break;
+        }
+        
         this->drawAndDisplay();
     }
-
     return true;
 }
